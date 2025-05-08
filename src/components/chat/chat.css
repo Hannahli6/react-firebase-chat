@@ -1,0 +1,152 @@
+.chat{
+    flex: 2;
+    border-left: 2px solid #8d6a8e;
+    border-right: 2px solid #8d6a8e;
+    display: flex;
+    flex-direction: column;
+
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px;
+        border-bottom: 2px solid #8d6a8e;
+
+        .user{
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            .texts{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                span{
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                p{
+                    color: rgba(255, 255, 255, 0.748);
+                    font-size: 14px;
+                }
+            }
+        }
+        .icons{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .center{
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+
+        .message{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            max-width: 70%;
+
+            .texts{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                p{
+                    background-color: #8d6a8e86;
+                    padding: 15px;
+                    border-radius: 10px;
+                }
+
+                img{
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .own{
+            align-self: flex-end;
+            
+            .texts p{
+                background-color: #8d6a8e;
+                padding: 15px;
+                border-radius: 10px;
+            }
+
+            span{
+                text-align: right;
+            }
+        }
+    }
+    .bottom{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #8d6a8e;
+        gap: 20px;
+
+        .icons{
+            display: flex;
+            gap: 20px;
+
+            
+        }
+
+        img{
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        input{
+            background-color: #8d6a8e7e;
+            border: none;
+            outline: none;
+            color: white;
+            flex: 1;
+            padding: 20px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        .emoji{
+            position: relative;
+
+            .emojiPicker{
+                position: absolute;
+                bottom: 60px;
+                left: 0;
+            }
+        }
+
+        .sendButton{
+            background-color: #8d6a8e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border-color: transparent;
+            cursor: pointer;
+        }
+    }
+}
