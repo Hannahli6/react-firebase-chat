@@ -1,5 +1,8 @@
 .detail{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+   
 
     .user{
         display: flex;
@@ -7,7 +10,7 @@
         align-items: center;
         gap: 10px;
         padding: 30px 0 30px 0;
-        border-bottom: 2px solid #8d6a8e;
+        border-bottom: 3px solid #8d6a8e;
 
         img{
             width: 70px;
@@ -21,6 +24,9 @@
         flex-direction: column;
         padding: 20px;
         gap: 20px;
+        /* background-color: #a78cb2; */
+        flex: 1;
+        overflow: scroll;
 
         .option{
             .title{
@@ -38,7 +44,7 @@
                     height: 30px;
                     cursor: pointer;
                     background-color: #8d6a8e;
-                    border-radius: 50%;
+                    /* border-radius: 50%; */
                     padding: 10px;
                 }
             }
@@ -77,7 +83,7 @@
                         height: 30px;
                         cursor: pointer;
                         background-color: #8d6a8e;
-                        border-radius: 50%;
+                        /* border-radius: 50%; */
                         padding: 10px;
                     }
                 }
@@ -86,14 +92,14 @@
 
         button{
             padding: 15px 25px;
-            background-color: #65538a;
+            background-color: #3b2d58;
             color: white;
             border: none;
             border-radius: 10px;
             cursor: pointer;
 
             &:hover{
-                background-color: rgb(138, 70, 113);
+                background-color: rgba(116, 49, 92, 0.664);
                 transition: all 0.3s ease;  
             }
 

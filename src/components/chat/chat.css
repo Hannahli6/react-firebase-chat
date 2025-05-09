@@ -1,7 +1,7 @@
 .chat{
     flex: 2;
-    border-left: 2px solid #8d6a8e;
-    border-right: 2px solid #8d6a8e;
+    border-left: 3px solid #8d6a8e;
+    border-right: 3px solid #8d6a8e;
     display: flex;
     flex-direction: column;
 
@@ -11,7 +11,7 @@
         justify-content: space-between;
         gap: 20px;
         padding: 20px;
-        border-bottom: 2px solid #8d6a8e;
+        border-bottom: 3px solid #8d6a8e;
 
         .user{
             img{
@@ -63,7 +63,7 @@
                 gap: 10px;
 
                 p{
-                    background-color: #8d6a8e86;
+                    background-color: #a78cb2;
                     padding: 15px;
                     border-radius: 10px;
                 }
@@ -88,7 +88,7 @@
             align-self: flex-end;
             
             .texts p{
-                background-color: #8d6a8e;
+                background-color: #d283b1;
                 padding: 15px;
                 border-radius: 10px;
             }
@@ -103,7 +103,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-top: 2px solid #8d6a8e;
+        border-top: 3px solid #8d6a8e;
         gap: 20px;
 
         .icons{
@@ -120,7 +120,7 @@
         }
 
         input{
-            background-color: #8d6a8e7e;
+            background-color: #b59cc5;
             border: none;
             outline: none;
             color: white;
@@ -132,7 +132,7 @@
 
         .emoji{
             position: relative;
-
+            z-index: 10;
             .emojiPicker{
                 position: absolute;
                 bottom: 60px;

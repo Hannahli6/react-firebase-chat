@@ -36,35 +36,35 @@ const Chat = () => {
             <div className='center'>
                 <div className='message own'>
                     <div className='texts'>
-                        <p>Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p className='pixel-corners'>Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing an Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                         <span>1 min ago</span>
                     </div>
                 </div>
                 <div className='message'>
                     <img src='./avatar.png'></img>
                     <div className='texts'>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        <p className='pixel-corners'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                         <span>1 min ago</span>
                     </div>
                 </div>
                 <div className='message'>
                     <img src='./avatar.png'></img>
                     <div className='texts'>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        <p className='pixel-corners'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                         <span>1 min ago</span>
                     </div>
                 </div>
                 <div className='message own'>
                     <div className='texts'>
-                        <img src='./avatar.png'></img>
-                        <p>Small Message</p>
+                        <img className="pixel-corners" src='./avatar.png'></img>
+                        <p className='pixel-corners'>Small Message</p>
                         <span>1 min ago</span>
                     </div>
                 </div>
                 <div className='message'>
                     <img src='./avatar.png'></img>
                     <div className='texts'>
-                        <p>Some text messages here and there</p>
+                        <p className='pixel-corners'>Some text messages here and there</p>
                         <span>1 min ago</span>
                     </div>
                 </div>
@@ -77,6 +77,7 @@ const Chat = () => {
                     <img src= "./mic.png" alt=""/>
                 </div>
                 <input 
+                    className='pixel-corners'
                     type='text' 
                     placeholder='Type a message...'
                     value={text}
@@ -88,7 +89,7 @@ const Chat = () => {
                         <EmojiPicker open={openEmoji} onEmojiClick={handleEmojiClick}/>
                     </div>
                 </div>
-                <button className='sendButton'> Send </button>
+                <button className='sendButton pixel-corners'> Send </button>
             </div>
             <div></div>
         </div>
