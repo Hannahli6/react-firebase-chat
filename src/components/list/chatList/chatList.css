@@ -1,6 +1,6 @@
 .chatList{
     flex:1;
-    overflow: scroll;
+    overflow-y: scroll;
     background-color: #a78cb2;
     border-radius: 0 0 0 30px;
 

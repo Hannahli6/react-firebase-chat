@@ -4,6 +4,7 @@
     border-right: 3px solid #8d6a8e;
     display: flex;
     flex-direction: column;
+   
 
     .top{
         display: flex;
@@ -49,7 +50,7 @@
         padding: 20px;
         display: flex;
         flex-direction: column;
-        overflow: scroll;
+        overflow-y: scroll;
 
         .message{
             display: flex;
